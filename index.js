@@ -13,6 +13,7 @@ var review_correct = $("#review-correct");
 var review_incorrect_0 = $("#review-incorrect-0");
 var review_incorrect_1 = $("#review-incorrect-1");
 var review_incorrect_2 = $("#review-incorrect-2");
+var review_explanation = $("#review-explanation");
 var review_modal = $("#review-modal");
 var history_col = $("#history-col");
 var question_pool = null;
@@ -87,6 +88,7 @@ function fill_review(){
     review_incorrect_0.innerHTML = question.incorrect[0];
     review_incorrect_1.innerHTML = question.incorrect[1];
     review_incorrect_2.innerHTML = question.incorrect[2];
+    review_explanation.innerHTML = question.explanation || "Google it :P";
 }
 
 function scramble(array) {
