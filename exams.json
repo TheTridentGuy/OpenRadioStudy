@@ -1,0 +1,84 @@
+{
+    "technician": [
+        {
+            "text": "What frequency range is referred to as HF?",
+            "incorrect": [
+                "300 to 3000 MHz",
+                "30 to 300 MHz",
+                "300 to 3000 kHz"
+            ],
+            "correct": "3 to 30 MHz",
+            "explanation": "HF (High Frequency) refers to the radio spectrum from 3 to 30 MHz. This band is popular for long-distance communication due to its propagation characteristics."
+        },
+        {
+            "text": "What is the maximum power output permitted for a Technician class licensee operating on the 2 meter band?",
+            "incorrect": [
+                "5 watts",
+                "25 watts",
+                "200 watts"
+            ],
+            "correct": "1500 watts",
+            "explanation": "Technician class operators have full privileges on frequencies above 30 MHz, including the 2 meter band (144-148 MHz), with a maximum power limit of 1500 watts."
+        },
+        {
+            "text": "Which of the following is a valid call sign for a US amateur radio station?",
+            "incorrect": [
+                "12N2ABC",
+                "N2A2C",
+                "2AB3C"
+            ],
+            "correct": "KJ4ABC",
+            "explanation": "US amateur call signs follow specific formats. KJ4ABC follows the 2x1x3 format (2 letters, 1 number, 3 letters) which is valid for US stations."
+        },
+        {
+            "text": "What is the purpose of a repeater?",
+            "incorrect": [
+                "To increase antenna gain",
+                "To reduce interference",
+                "To convert digital signals to analog"
+            ],
+            "correct": "To extend the range of handheld and mobile stations",
+            "explanation": "Repeaters receive weak signals and retransmit them at higher power and/or from elevated locations, extending the communication range of low-power stations."
+        },
+        {
+            "text": "What type of modulation is used by FT8?",
+            "incorrect": [
+                "Amplitude modulation",
+                "Frequency modulation",
+                "Phase modulation"
+            ],
+            "correct": "Frequency shift keying",
+            "explanation": "FT8 uses 8-tone frequency shift keying (8-FSK) modulation, where information is transmitted by shifting between 8 different frequencies."
+        },
+        {
+            "text": "What is the term for the ratio of the peak envelope power to the average power of an SSB signal?",
+            "incorrect": [
+                "Duty cycle",
+                "Modulation index",
+                "Power factor"
+            ],
+            "correct": "Peak envelope power to average power ratio",
+            "explanation": "For SSB signals, the peak envelope power (PEP) is typically much higher than the average power due to the varying amplitude of speech patterns."
+        },
+        {
+            "text": "What is the minimum allowable frequency separation between two repeater stations operating in the same band?",
+            "incorrect": [
+                "10 kHz",
+                "25 kHz",
+                "50 kHz"
+            ],
+            "correct": "20 kHz",
+            "explanation": "FCC regulations require a minimum frequency separation of 20 kHz between repeater stations operating in the same band to prevent interference."
+        },
+        {
+            "text": "What does SWR measure?",
+            "incorrect": [
+                "Signal strength",
+                "Antenna gain",
+                "Frequency accuracy"
+            ],
+            "correct": "Impedance matching between transmitter and antenna system",
+            "explanation": "SWR (Standing Wave Ratio) measures how well the impedance of the antenna system matches the transmitter's output impedance. Lower SWR indicates better matching."
+        }
+    ]
+}

@@ -1,0 +1,146 @@
+:root {
+    --bg-color: #9900ff;
+    --bg-color-2: #6100c2;
+    --text-color: #ffffff;
+    --radius: 1vmin;
+    --margin: 0.5vmin;
+}
+* {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.flex-grow {
+    display: flex;
+    flex-grow: 1;
+}
+.flex-shrink {
+    display: flex;
+    flex-shrink: 1;
+}
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 6vmin;
+    padding: 1vmin;
+    font-weight: bold
+}
+.subtitle {
+    font-size: 3vmin;
+    font-weight: bold
+}
+.hidden {
+    visibility: hidden;
+}
+.header-row {
+    align-items: center;
+}
+.key-hint {
+    position: absolute;
+    top: 1vmin;
+    left: 1vmin;
+    font-size: 2vmin;
+    border-radius: 1vmin;
+    background: #555;
+    border: 1px solid #333;
+    color: #fff;
+    opacity: 0.5;
+    padding: 0.5vmin;
+    min-width: 1.25em;
+    z-index: 1;
+}
+.exam-question {
+    display: flex;
+    font-size: 3vmin;
+    padding: 1vmin;
+    margin: var(--margin);
+    font-size: x-large;
+    height: 20vmin;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-color-2);
+    border-radius: var(--radius);
+    padding: 1vmin;
+}
+.exam-option {
+    display: flex;
+    background-color: var(--bg-color-2);
+    border-radius: var(--radius);
+    font-size: larger;
+    height: 15vmin;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: var(--margin);
+    flex-basis: 100%;
+    padding: 1vmin;
+}
+.main-container, .review-container {
+    display: flex;
+    flex-direction: column;
+    padding: var(--margin)*2;
+    flex-basis: 100%;
+}
+.history-item {
+    display: flex;
+    background-color: var(--bg-color-2);
+    border-radius: var(--radius);
+    font-size: larger;
+    height: 8vmin;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: var(--margin);
+    padding: 1vmin;
+}
+#review-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    display: none;
+}
+.correct {
+    background-color: #07d800;
+}
+.incorrect {
+    background-color: #d10000; 
+}
+#exam-col {
+    flex-basis: 100%;
+}
+@media (orientation: landscape) {
+    .main-container {
+        flex-direction: row;
+    }
+}

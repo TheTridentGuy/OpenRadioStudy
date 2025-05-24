@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenRadioStudy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="module" src="index.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="flex-col flex-grow" id="exam-col">
+            <div class="flex-row">
+                <div class="exam-question flex-grow" id="exam-question">
+                    Select an Exam:
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="exam-option flex-grow hidden"></div>
+
+                <div class="exam-option flex-grow flex-col" id="exam-option-0">
+                    <div class="key-hint">W</div>
+                    General Exam
+                </div>
+
+                <div class="exam-option flex-grow hidden"></div>
+            </div>
+            <div class="flex-row">
+                <div class="exam-option flex-grow" id="exam-option-1">
+                    <div class="key-hint">A</div>
+                    Technician Exam
+                </div>
+
+                <div class="exam-option flex-grow" id="exam-option-2">
+                    <div class="key-hint">S</div>
+                    More...
+                </div>
+
+                <div class="exam-option flex-grow" id="exam-option-3">
+                    <div class="key-hint">D</div>
+                    Amateur Extra Exam
+                </div>
+            </div>
+        </div>
+        <div class="flex-col flex-grow">
+            <div class="key-hint">SPACE</div>
+            <div class="flex-col" id="history-col">
+                <div class="history-item">About OpenRadioStudy</div>
+            </div>
+        </div>
+    </div>
+    <div id="review-modal">
+        <div id="review-container" class="flex-col">
+            <div class="exam-question" id="review-question">
+                OpenRadioStudy (c) 2025, Aiden Bohlander
+                <br>
+                Released under GNU General Public License v3.0
+            </div>
+            <div class="history-item correct" id="review-correct"></div>
+            <div class="history-item incorrect" id="review-incorrect-0"></div>
+            <div class="history-item incorrect" id="review-incorrect-1"></div>
+            <div class="history-item incorrect" id="review-incorrect-2"></div>
+            <div class="exam-question" id="review-explanation"></div>
+        </div>
+    </div>
+</body>
+</html>
