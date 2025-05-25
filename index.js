@@ -103,6 +103,8 @@ exam_option_0.onclick = () => {start_exam("technician")};
 exam_option_1.onclick = () => {start_exam("technician")};
 exam_option_2.onclick = () => {start_exam("technician")};
 exam_option_3.onclick = () => {start_exam("technician")};
-
+history_col.ontouchstart = (event) => {review_modal.style.display = "block"};
+document.ontouchend = (event) => {review_modal.style.display = "none"};
+document.ontouchcancel = (event) => {review_modal.style.display = "none"};
 
 console.log("Script loaded successfully");
